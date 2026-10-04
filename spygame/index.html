@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>เกมสปาย — นโยบายความเป็นส่วนตัว</title>
+<style>
+  :root { --bg:#0D0F1A; --card:#1A1C2B; --ink:#F2F3F8; --muted:#A6A9BC; --accent:#F5454D; --line:#2A2D40; }
+  @media (prefers-color-scheme: light) {
+    :root { --bg:#F5F5F8; --card:#FFFFFF; --ink:#15172A; --muted:#5C6075; --accent:#D8303A; --line:#E4E5EE; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,"Sukhumvit Set","Thonburi",sans-serif; line-height:1.7; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .logo { width:48px; height:48px; border-radius:50%; background:var(--accent); display:grid; place-items:center; flex:none; }
+  h1 { font-size:28px; margin:0; line-height:1.3; }
+  h2 { font-size:19px; margin:0 0 8px; }
+  .meta { color:var(--muted); font-size:14px; margin:0; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px 22px; margin-bottom:16px; }
+  ul { padding-left:20px; margin:8px 0 0; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">
+      <svg width="30" height="30" viewBox="0 0 30 30"><rect x="9" y="3" width="12" height="8" rx="4" fill="#111"/><rect x="3" y="10" width="24" height="3.5" rx="1.75" fill="#111"/><rect x="5" y="17" width="8.5" height="5.5" rx="2.5" fill="#111"/><rect x="16.5" y="17" width="8.5" height="5.5" rx="2.5" fill="#111"/><rect x="13" y="18" width="4" height="1.6" fill="#111"/></svg>
+    </div>
+    <div>
+      <h1>เกมสปาย</h1>
+      <p class="meta" id="privacy">นโยบายความเป็นส่วนตัว · มีผลตั้งแต่ 4 ตุลาคม 2569</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>สรุปสั้น ๆ</h2>
+    <p>เกมสปายไม่เก็บ ไม่ส่ง และไม่แชร์ข้อมูลส่วนตัวของคุณ แอปทำงานในเครื่องทั้งหมด ไม่เชื่อมต่ออินเทอร์เน็ต</p>
+  </section>
+
+  <section>
+    <h2>ข้อมูลที่เก็บไว้ในเครื่องของคุณเท่านั้น</h2>
+    <ul>
+      <li>ชื่อผู้เล่นและการตั้งค่าเกม (จำนวนสปาย หมวดคำ โหมด เวลา)</li>
+      <li>คำที่คุณพิมพ์เองในหมวด "คำของฉัน"</li>
+      <li>ประวัติว่าคำไหนออกไปแล้ว เพื่อไม่ให้สุ่มซ้ำ</li>
+    </ul>
+    <p>ข้อมูลเหล่านี้ไม่ถูกส่งออกจากเครื่อง ผู้พัฒนาเข้าถึงไม่ได้ และจะถูกลบทั้งหมดเมื่อคุณลบแอป</p>
+  </section>
+
+  <section>
+    <h2>สิ่งที่แอปไม่ทำ</h2>
+    <ul>
+      <li>ไม่มีบัญชีผู้ใช้ ไม่ต้องสมัครสมาชิก</li>
+      <li>ไม่มีโฆษณา ไม่มีการติดตามหรือวิเคราะห์การใช้งาน</li>
+      <li>ไม่ขอสิทธิ์กล้อง ไมโครโฟน ตำแหน่ง หรือรายชื่อติดต่อ</li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <h2>ติดต่อ / ช่วยเหลือ</h2>
+    <p><strong>วิธีเล่นสั้น ๆ:</strong> ใส่ชื่อผู้เล่น เลือกจำนวนสปายและหมวดคำ กดเริ่มเกม แล้วส่งเครื่องเวียนกันให้แต่ละคนกดค้างดูคำลับของตัวเอง จากนั้นผลัดกันพูดใบ้ แล้วโหวตหาสปาย</p>
+    <p>มีคำถาม พบปัญหา หรืออยากเสนอคำใหม่ ติดต่อได้ที่ <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></p>
+  </section>
+
+  <section lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p>Spy Game (เกมสปาย) does not collect, transmit or share any personal data. It works fully offline: no accounts, no ads, no analytics and no network access. Player names, game settings, your custom words and the list of already-played words are stored only on your device and are removed when you delete the app.</p>
+    <p>Support: <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
