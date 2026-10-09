@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ตราเวลา – ช่วยเหลือและความเป็นส่วนตัว</title>
+<link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#EEF2FA; --card:#FFFFFF; --ink:#0A1633; --muted:#55607A; --accent:#1D4ED8; --line:#DCE3F1; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0A1633; --card:#12224A; --ink:#EEF2FA; --muted:#A9B6D3; --accent:#FACC15; --line:#22366A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:'Anuphan',-apple-system,sans-serif; line-height:1.7; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
+  header { display:flex; align-items:center; gap:12px; margin-bottom:28px; }
+  .logo { width:44px; height:44px; border-radius:13px; background:#0A1633; display:grid; place-items:center; color:#FACC15; font-size:24px; border:2px solid #FACC15; }
+  h1 { font-size:28px; margin:0 0 4px; line-height:1.3; }
+  h2 { font-size:19px; margin:0 0 8px; }
+  p, li { font-size:16px; }
+  .meta { color:var(--muted); font-size:14px; margin:0; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px 22px; margin-bottom:16px; }
+  ul { padding-left:20px; margin:8px 0 0; }
+  a { color:var(--accent); }
+  hr { border:0; border-top:1px solid var(--line); margin:40px 0 24px; }
+  .en h1 { font-size:22px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">&#9201;&#xFE0E;</div>
+    <div>
+      <h1>ตราเวลา (TimeStampPro)</h1>
+      <p class="meta">กล้องประทับวัน–เวลาและสถานที่ · ปรับปรุงล่าสุด 9 ตุลาคม 2569</p>
+    </div>
+  </header>
+
+  <section id="support">
+    <h2>ช่วยเหลือ</h2>
+    <ul>
+      <li><strong>ถ่ายรูป</strong> เปิดแอปแล้วกดปุ่มถ่ายได้เลย วัน–เวลาและสถานที่จะถูกประทับลงบนรูปและบันทึกลงอัลบั้ม “ตราเวลา”</li>
+      <li><strong>ที่อยู่ไม่ขึ้น</strong> ตรวจว่าเปิดตำแหน่งให้แอปแล้ว และต่ออินเทอร์เน็ต ถ้ากดถ่ายตอนที่ยังหาที่อยู่ไม่ได้ แอปจะไม่ใส่ที่อยู่เก่าที่อาจผิด และจะแจ้งเตือนให้ทราบ</li>
+      <li><strong>เทมเพลตป้าย</strong> แตะปุ่มเทมเพลตบนหน้ากล้องเพื่อสลับหรือบันทึกชุดป้ายใหม่</li>
+      <li><strong>รูปเก่า</strong> แตะปุ่มรูปภาพมุมขวาล่าง เลือกรูปเดียวเพื่อแก้ละเอียด หรือเลือกหลายรูปเพื่อประทับวันเวลาและสถานที่เดิมของแต่ละรูปพร้อมกัน</li>
+      <li><strong>ตั้งเวลาเอง</strong> รูปที่ใช้เวลาที่ตั้งเองจะมีคำว่า “ตั้งเวลาเอง” กำกับบนป้ายเสมอ</li>
+      <li>ติดต่อผู้พัฒนา: <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <section id="privacy">
+    <h2>นโยบายความเป็นส่วนตัว</h2>
+    <p>ตราเวลาเป็นแอปฟรี ไม่มีโฆษณา ไม่มีการซื้อในแอป ไม่ต้องสมัครสมาชิก และ<strong>ไม่เก็บข้อมูลส่วนบุคคลใด ๆ</strong> ไปยังเซิร์ฟเวอร์ของผู้พัฒนา</p>
+    <ul>
+      <li><strong>กล้อง</strong> ใช้ถ่ายรูปเท่านั้น รูปอยู่ในเครื่องของคุณ</li>
+      <li><strong>ตำแหน่ง</strong> ใช้ประทับพิกัดและชื่อสถานที่ลงบนรูป การแปลงพิกัดเป็นที่อยู่ใช้บริการแผนที่ของ Apple ผู้พัฒนาไม่ได้รับหรือเก็บตำแหน่งของคุณ</li>
+      <li><strong>คลังรูป</strong> ใช้บันทึกรูปลงอัลบั้ม “ตราเวลา” และอ่านวันเวลา/ตำแหน่งของรูปเก่าที่คุณเลือกเพื่อประทับ</li>
+      <li><strong>เวลาเครือข่าย</strong> แอปอ่านเวลาจากเซิร์ฟเวอร์สาธารณะ (เช่น apple.com) เพื่อตรวจว่านาฬิกาเครื่องตรง ไม่มีการส่งข้อมูลของคุณ</li>
+      <li>ไม่มีโฆษณา ไม่มีระบบวิเคราะห์ ไม่มีการติดตามข้ามแอป และไม่ขายหรือแบ่งปันข้อมูล</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <div class="en">
+    <h1>TimeStamp (TimeStampPro)</h1>
+    <section>
+      <h2>Support</h2>
+      <ul>
+        <li>Open the app and tap the shutter — the date, time and place are stamped onto the photo and saved to the “TimeStamp” album.</li>
+        <li>No address? Check that location is allowed and you are online. If the address isn’t ready when you shoot, the app never uses an old address and shows a notice instead.</li>
+        <li>Use the template button on the camera screen to switch or save stamp templates.</li>
+        <li>Tap the photo button to stamp existing photos — one at a time, or many at once using each photo’s original date and place.</li>
+        <li>Photos that use a manually set time are always marked “time set manually”.</li>
+        <li>Contact: <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></li>
+      </ul>
+    </section>
+    <section>
+      <h2>Privacy Policy</h2>
+      <p>TimeStamp is free with no ads, no in-app purchases and no account, and it <strong>does not collect any personal data</strong> on the developer’s servers.</p>
+      <ul>
+        <li><strong>Camera</strong> — used only to take photos, which stay on your device.</li>
+        <li><strong>Location</strong> — used to stamp coordinates and the place name. Address lookup uses Apple’s map services; the developer never receives your location.</li>
+        <li><strong>Photo library</strong> — used to save to the “TimeStamp” album and to read the date/location of existing photos you choose to stamp.</li>
+        <li><strong>Network time</strong> — the app reads the time from public servers (e.g. apple.com) to check the device clock. None of your data is sent.</li>
+        <li>No ads, no analytics, no cross-app tracking, and no data is sold or shared.</li>
+      </ul>
+    </section>
+  </div>
+</main>
+</body>
+</html>
