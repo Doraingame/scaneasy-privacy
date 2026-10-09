@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>หนูหัดเขียน — นโยบายความเป็นส่วนตัว</title>
+<style>
+  :root { --bg:#EEF5FB; --card:#FFFFFF; --ink:#1E2B45; --muted:#5F6F88; --accent:#2D6BE4; --line:#D6E4F2; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#111A2C; --card:#1A2640; --ink:#EEF3FB; --muted:#A9B6CC; --accent:#8DB8FF; --line:#2B3A5A; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,"Sukhumvit Set","Thonburi",sans-serif; line-height:1.7; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .logo { width:48px; height:48px; border-radius:15px; background:#3B82F0; color:#fff; display:grid; place-items:center; flex:none; font-weight:800; font-size:30px; }
+  h1 { font-size:28px; margin:0; line-height:1.3; }
+  h2 { font-size:19px; margin:0 0 8px; }
+  .meta { color:var(--muted); font-size:14px; margin:0; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px 22px; margin-bottom:16px; }
+  ul { padding-left:20px; margin:8px 0 0; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">ก</div>
+    <div>
+      <h1>หนูหัดเขียน ก-ฮ ABC อนุบาล</h1>
+      <p class="meta" id="privacy">นโยบายความเป็นส่วนตัว · มีผลตั้งแต่ 9 ตุลาคม 2569</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>สรุปสั้น ๆ</h2>
+    <p>หนูหัดเขียนเป็นแอปสำหรับเด็ก ไม่เก็บ ไม่ส่ง และไม่แชร์ข้อมูลส่วนตัวของเด็กหรือผู้ปกครอง แอปทำงานในเครื่องทั้งหมด ไม่เชื่อมต่ออินเทอร์เน็ต</p>
+  </section>
+
+  <section>
+    <h2>ข้อมูลที่เก็บไว้ในเครื่องเท่านั้น</h2>
+    <ul>
+      <li>จำนวนดาวที่ได้ในแต่ละตัวอักษร รูปทรง และเกม</li>
+      <li>ชื่อที่ผู้ปกครองพิมพ์ในหมวด "เขียนชื่อตัวเอง" (เก็บได้สูงสุด 6 ชื่อ ใช้สร้างแบบฝึกเท่านั้น)</li>
+      <li>ขนาดปากกาที่เลือกไว้</li>
+    </ul>
+    <p>ข้อมูลเหล่านี้ไม่ถูกส่งออกจากเครื่อง ผู้พัฒนาเข้าถึงไม่ได้ และจะถูกลบทั้งหมดเมื่อลบแอป</p>
+  </section>
+
+  <section>
+    <h2>เสียงอ่าน</h2>
+    <p>เสียงอ่านตัวอักษรและคำศัพท์ใช้ระบบเสียงในเครื่อง iPhone/iPad ทำงานแบบออฟไลน์ ไม่มีการอัดเสียงหรือใช้ไมโครโฟน</p>
+  </section>
+
+  <section>
+    <h2>สิ่งที่แอปไม่ทำ</h2>
+    <ul>
+      <li>ไม่มีบัญชีผู้ใช้ ไม่ต้องสมัครสมาชิก</li>
+      <li>ไม่มีโฆษณา ไม่มีการติดตามหรือวิเคราะห์การใช้งาน ไม่มี SDK ของบริษัทอื่น</li>
+      <li>ไม่มีลิงก์พาออกนอกแอป และไม่มีการซื้อเพิ่มในแอป</li>
+      <li>ไม่ขอสิทธิ์กล้อง ไมโครโฟน ตำแหน่ง รูปภาพ หรือรายชื่อติดต่อ</li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <h2>วิธีใช้ / ติดต่อ</h2>
+    <p><strong>ฝึกเขียน:</strong> เลือกหมวดจากหน้าแรก แตะตัวที่ต้องการ แล้วลากนิ้วหรือ Apple Pencil ทับเส้นจุด เขียนครบแอปจะให้ดาว 1–3 ดวง ถ้าออกนอกเส้นเยอะ กด "ลบ" แล้วลองใหม่</p>
+    <p><strong>ขนาดปากกา:</strong> แตะจุดเล็ก กลาง ใหญ่ ที่แถบล่างของหน้าฝึกเขียน</p>
+    <p><strong>เขียนชื่อตัวเอง:</strong> ผู้ปกครองพิมพ์ชื่อ แล้วกด "สร้างแบบฝึก"</p>
+    <p><strong>ไม่มีเสียง:</strong> ตรวจว่าเปิดเสียงเครื่องแล้ว และมีเสียงภาษาไทยในเครื่อง (การตั้งค่า › การช่วยการเข้าถึง › เนื้อหาที่พูด › เสียง)</p>
+    <p>มีคำถามหรือพบปัญหา ติดต่อได้ที่ <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></p>
+  </section>
+
+  <section lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p>NuHatKhian (หนูหัดเขียน) is a handwriting practice app made for young children. It does not collect, transmit or share any personal data from children or parents. It works fully offline: no accounts, no ads, no analytics, no third-party SDKs, no links out of the app and no in-app purchases. Stars earned, names typed by a parent for the "write your name" exercise, and the chosen pen size are stored only on the device and are removed when the app is deleted. Read-aloud uses the device's built-in speech voices offline; the app never records audio.</p>
+    <p>Support: <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
