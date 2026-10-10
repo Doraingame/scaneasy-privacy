@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>นับวัน — นโยบายความเป็นส่วนตัว</title>
+<style>
+  :root { --bg:#F5F5F7; --card:#FFFFFF; --ink:#14141A; --muted:#5C5F6B; --accent:#D9733F; --line:#E4E4EA; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#101116; --card:#1B1C22; --ink:#F4F4F6; --muted:#A5A7B4; --accent:#F0915E; --line:#2A2C34; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,"Sukhumvit Set","Thonburi",sans-serif; line-height:1.7; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .logo { width:48px; height:48px; border-radius:13px; background:#F0915E; color:#14141A; display:grid; place-items:center; flex:none; font-weight:800; font-size:22px; }
+  h1 { font-size:28px; margin:0; line-height:1.3; }
+  h2 { font-size:19px; margin:0 0 8px; }
+  .meta { color:var(--muted); font-size:14px; margin:0; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px 22px; margin-bottom:16px; }
+  ul { padding-left:20px; margin:8px 0 0; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">41</div>
+    <div>
+      <h1>นับวัน</h1>
+      <p class="meta" id="privacy">นโยบายความเป็นส่วนตัว · มีผลตั้งแต่ 11 ตุลาคม 2569</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>สรุปสั้น ๆ</h2>
+    <p>นับวันไม่เก็บ ไม่ส่ง และไม่แชร์ข้อมูลส่วนตัวของคุณให้ผู้พัฒนาหรือใครก็ตาม วันสำคัญทั้งหมดอยู่ในเครื่องของคุณเท่านั้น</p>
+  </section>
+
+  <section>
+    <h2>ข้อมูลที่แอปเก็บในเครื่อง</h2>
+    <ul>
+      <li>วันสำคัญที่คุณเพิ่ม เช่น ชื่อ วันที่ สี ไอคอน อีโมจิ และการตั้งค่าการแจ้งเตือน</li>
+      <li>รูปพื้นหลังที่คุณเลือก (แอปย่อขนาดแล้วเก็บสำเนาไว้ในเครื่อง เพื่อให้วิดเจ็ตแสดงได้)</li>
+      <li>การตั้งค่า เช่น ธีม รูปแบบตัวเลข และปี พ.ศ./ค.ศ.</li>
+    </ul>
+    <p>ข้อมูลเหล่านี้ใช้ร่วมกันระหว่างแอปกับวิดเจ็ตของแอปในเครื่องเดียวกันเท่านั้น และจะถูกลบเมื่อคุณลบแอป</p>
+  </section>
+
+  <section>
+    <h2>รูปภาพและการแจ้งเตือน</h2>
+    <p>เวลาเลือกรูปพื้นหลัง แอปใช้ตัวเลือกรูปของระบบ แอปได้เฉพาะรูปที่คุณเลือก และมองไม่เห็นคลังรูปภาพทั้งหมดของคุณ</p>
+    <p>การแจ้งเตือนตั้งเวลาไว้ในเครื่อง ไม่มีการส่งข้อมูลผ่านเซิร์ฟเวอร์</p>
+  </section>
+
+  <section>
+    <h2>การเลี้ยงกาแฟผู้พัฒนา</h2>
+    <p>ทุกฟีเจอร์ใช้ฟรี ถ้าเลือกเลี้ยงกาแฟ การชำระเงินทำผ่าน App Store ของ Apple ทั้งหมด ผู้พัฒนาไม่เห็นข้อมูลการชำระเงินของคุณ</p>
+  </section>
+
+  <section>
+    <h2>สิ่งที่แอปไม่ทำ</h2>
+    <ul>
+      <li>ไม่มีบัญชีผู้ใช้ ไม่ต้องสมัครสมาชิก</li>
+      <li>ไม่มีโฆษณา ไม่มีการติดตามหรือวิเคราะห์การใช้งาน</li>
+      <li>ไม่ขอสิทธิ์กล้อง ไมโครโฟน ตำแหน่ง หรือรายชื่อติดต่อ</li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <h2>ติดต่อ / ช่วยเหลือ</h2>
+    <p><strong>เพิ่มวันสำคัญ:</strong> กด "เพิ่มวันสำคัญ" ด้านล่าง เลือกได้ทั้งนับถอยหลังหรือนับวันที่ผ่านมา</p>
+    <p><strong>เลือกวันที่จะแสดงบนวิดเจ็ต:</strong> กดค้างที่วิดเจ็ต (บน Mac คลิกขวา) แล้วเลือก "แก้ไขวิดเจ็ต"</p>
+    <p><strong>จัดเรียงเอง:</strong> กด "จัดเรียง" ที่หน้าแรก แล้วลากรายการ</p>
+    <p>มีคำถามหรือพบปัญหา ติดต่อได้ที่ <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></p>
+  </section>
+
+  <section lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p>Nub Wan (นับวัน) does not collect, transmit or share any personal data with the developer or anyone else. Your events (titles, dates, colours, icons, emoji, reminder settings), the background photos you pick (resized copies) and your settings are stored only on your device, shared between the app and its widgets. Photos are chosen through the system photo picker, so the app only receives the photos you select. Reminders are scheduled locally on the device. Optional tips are processed entirely by Apple through the App Store. No accounts, no ads, no analytics, no tracking.</p>
+    <p>Support: <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
