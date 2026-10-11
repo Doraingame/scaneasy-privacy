@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>แวบ (Waeb) — นโยบายความเป็นส่วนตัว</title>
+<style>
+  :root { --bg:#F4F2EE; --card:#FFFFFF; --ink:#1B1D22; --muted:#5E626B; --accent:#3D8B6E; --line:#E2DED6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14161A; --card:#1D2026; --ink:#ECEDEF; --muted:#A3A8B2; --accent:#7CC9A9; --line:#2C3038; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,"Sukhumvit Set","Thonburi",sans-serif; line-height:1.7; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .logo { width:48px; height:48px; border-radius:15px; background:#1D2026; color:#7CC9A9; display:grid; place-items:center; flex:none; font-weight:800; font-size:26px; }
+  h1 { font-size:28px; margin:0; line-height:1.3; }
+  h2 { font-size:19px; margin:0 0 8px; }
+  .meta { color:var(--muted); font-size:14px; margin:0; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px 22px; margin-bottom:16px; }
+  ul { padding-left:20px; margin:8px 0 0; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">✦</div>
+    <div>
+      <h1>แวบ — แชทลับสองคน</h1>
+      <p class="meta" id="privacy">นโยบายความเป็นส่วนตัว · มีผลตั้งแต่ 11 ตุลาคม 2569</p>
+    </div>
+  </header>
+
+  <section>
+    <h2>สรุปสั้น ๆ</h2>
+    <p>แวบเป็นห้องคุยสำหรับสองคน ไม่มีบัญชีผู้ใช้ ไม่ใช้เบอร์โทรหรืออีเมล ผู้พัฒนาไม่เก็บและอ่านข้อความของคุณไม่ได้ ข้อความถูกเข้ารหัสบนเครื่องก่อนส่ง และถูกลบหลังเปิดอ่าน</p>
+  </section>
+
+  <section>
+    <h2>ข้อความและรูปทำงานอย่างไร</h2>
+    <ul>
+      <li>ข้อความและรูปถูกเข้ารหัสแบบต้นทางถึงปลายทางบนเครื่องของคุณ (Curve25519 + ChaChaPoly) กุญแจอยู่บนสองเครื่องที่ผูกกันเท่านั้น</li>
+      <li>ระหว่างส่ง ข้อความที่เข้ารหัสแล้วจะพักไว้ชั่วคราวในฐานข้อมูลสาธารณะของ Apple iCloud (CloudKit) เพื่อส่งต่อให้อีกเครื่อง ผู้พัฒนาและ Apple อ่านเนื้อหาไม่ได้</li>
+      <li>เมื่ออีกฝ่ายเปิดอ่าน ข้อความหายจากจอทั้งสองเครื่องภายใน 10 วินาที และถูกลบออกจาก CloudKit ข้อความที่ไม่มีใครอ่านจะถูกลบอัตโนมัติภายใน 24 ชั่วโมง</li>
+      <li>แอปไม่เก็บประวัติแชท ไม่สำรองข้อความ และไม่มีสำเนาบนเซิร์ฟเวอร์ของผู้พัฒนา (ผู้พัฒนาไม่มีเซิร์ฟเวอร์)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>ข้อมูลที่อยู่ในเครื่องเท่านั้น</h2>
+    <ul>
+      <li>กุญแจเข้ารหัสของห้อง เก็บใน Keychain ของเครื่อง</li>
+      <li>การตั้งค่า เช่น ล็อกเมื่อคว่ำจอ ป้องกันการแคป และข้อความแจ้งเตือนที่เลือก</li>
+    </ul>
+    <p>เลขห้องและรหัสผ่านไม่ถูกบันทึกในเครื่อง ลบห้องหรือลบแอปแล้วข้อมูลเหล่านี้หายหมด</p>
+  </section>
+
+  <section>
+    <h2>สิทธิ์ที่แอปขอ</h2>
+    <ul>
+      <li><strong>การแจ้งเตือน:</strong> บอกว่ามีข้อความใหม่ ข้อความแจ้งเตือนเป็นภาษาอังกฤษทั่วไป ไม่มีชื่อ ไม่มีเนื้อหา</li>
+      <li><strong>รูปภาพ:</strong> เลือกรูปที่จะส่งเท่านั้น แอปไม่อ่านคลังรูปอื่น</li>
+      <li><strong>เซนเซอร์การเคลื่อนไหว:</strong> ตรวจว่าคว่ำเครื่อง เพื่อล็อกห้องทันที ประมวลผลในเครื่อง ไม่ส่งออก</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>สิ่งที่แอปไม่ทำ</h2>
+    <ul>
+      <li>ไม่มีโฆษณา ไม่มีการติดตามหรือวิเคราะห์การใช้งาน ไม่มี SDK ของบริษัทอื่น</li>
+      <li>ไม่ขอชื่อ เบอร์โทร อีเมล รายชื่อติดต่อ หรือตำแหน่ง</li>
+      <li>ไม่ขายหรือแชร์ข้อมูลให้ใคร</li>
+    </ul>
+  </section>
+
+  <section id="support">
+    <h2>วิธีใช้ / ติดต่อ</h2>
+    <p><strong>เริ่มใช้:</strong> ทั้งสองเครื่องกด "สร้างห้องใหม่" ใส่เลขห้อง 2 หลักและรหัส 4 หลักเดียวกัน เทียบเลข 6 หลักบนจอให้ตรงกัน แล้วกดยืนยันทั้งสองเครื่อง</p>
+    <p><strong>เข้าห้อง:</strong> กด "เข้าห้อง" ใส่เลขห้องและรหัส ถ้าใส่ผิด แอปจะเปิดห้องว่างโดยไม่เตือน ให้ลองใหม่</p>
+    <p><strong>ลบห้อง:</strong> ในห้อง แตะปุ่มโล่ › "ลบห้องนี้ออกจากเครื่อง" อีกฝ่ายจะส่งข้อความถึงคุณไม่ได้อีก</p>
+    <p><strong>ไม่ได้รับข้อความ:</strong> ทั้งสองเครื่องต้องลงชื่อ iCloud และต่ออินเทอร์เน็ต</p>
+    <p>แจ้งปัญหา หรือแจ้งการใช้งานที่ไม่เหมาะสม ติดต่อ <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></p>
+  </section>
+
+  <section lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p>Waeb is a private chat for two people. It has no accounts and asks for no phone number, email or name. Messages and photos are end-to-end encrypted on the device (Curve25519 + ChaChaPoly); the keys exist only on the two paired phones. While in transit the ciphertext is held briefly in Apple's CloudKit public database so the other phone can fetch it; neither the developer nor Apple can read it. Messages disappear from both screens 10 seconds after being read and are deleted from CloudKit; unread messages are deleted automatically within 24 hours. Room keys stay in the device Keychain and settings stay on the device; room numbers and codes are never stored. The app uses notifications (generic English text, no names or content), the photo picker (only photos you choose to send) and motion sensors (to lock when the phone is turned face-down, processed on device). No ads, no analytics, no third-party SDKs, and no data is sold or shared.</p>
+    <p>Support and abuse reports: <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></p>
+  </section>
+</main>
+</body>
+</html>
