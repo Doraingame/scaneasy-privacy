@@ -51,7 +51,7 @@
     <h2>ไมโครโฟนและการฟังเสียงพูด</h2>
     <ul>
       <li>แอปขอใช้ไมโครโฟนเฉพาะเมื่อกดปุ่ม "ให้เครื่องช่วยฟัง (โบนัส)" เพื่อตรวจว่าเด็กอ่านคำถูกหรือไม่</li>
-      <li>ใช้ระบบรู้จำเสียงของ Apple บนเครื่องเมื่อเครื่องรองรับ แอปไม่บันทึกเสียงเก็บไว้และไม่ส่งเสียงให้ผู้พัฒนา หากเครื่องไม่รองรับการประมวลผลในเครื่อง เสียงอาจถูกประมวลผลโดย Apple ตามนโยบายของ Apple</li>
+      <li>ใช้ระบบรู้จำเสียงของ Apple บนเครื่องเมื่อเครื่องรองรับ แอปไม่บันทึกเสียงเก็บไว้และไม่ส่งเสียงให้ผู้พัฒนา หากเครื่องไม่รองรับการประมวลผลในเครื่อง เสียงอาจถูกประมวลผลโดย Apple ตามนโยบายของ Apple ส่วนบน Android แอปใช้บริการรู้จำเสียงของระบบ (โดยทั่วไปคือ Google) ซึ่งอาจประมวลผลเสียงตามนโยบายของ Google แอปไม่บันทึกเสียงเก็บไว้และไม่ส่งเสียงให้ผู้พัฒนาเช่นกัน</li>
       <li>ไม่อนุญาตไมโครโฟนก็ใช้แอปได้ครบ — ครูหรือผู้ปกครองกด "อ่านถูก" ตัดสินแทน</li>
     </ul>
   </section>
@@ -77,7 +77,7 @@
     <ul>
       <li>Student nicknames, scores, stars, activity logs, assignments and settings are stored only on the device. Deleting the app (or "Reset" in Settings) removes them.</li>
       <li>Optional "Online classroom" stores class data in a Supabase database created and owned by the teacher or school; the developer has no access. Teachers sign in with email and password; students and parents join with a class code and a 4-digit PIN. Teachers can delete their account and all online class data in the app: Settings → Online classroom → "ลบบัญชีครู" (Delete teacher account).</li>
-      <li>The microphone is used only when the optional "listen" button is tapped, to check a child's reading. Apple speech recognition runs on-device when supported; no audio is stored or sent to the developer.</li>
+      <li>The microphone is used only when the optional "listen" button is tapped, to check a child's reading. Apple speech recognition runs on-device when supported; no audio is stored or sent to the developer. On Android the app uses the device's speech recognition service (usually Google), which may process the audio under Google's policies; the app still stores no audio and sends none to the developer.</li>
     </ul>
     <p>Contact: <a href="mailto:tatami.thirawat@gmail.com">tatami.thirawat@gmail.com</a></p>
     <p class="muted">© 2569 Thirawat Tatami</p>
